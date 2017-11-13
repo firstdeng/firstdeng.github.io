@@ -1,0 +1,26 @@
+body
+{
+	width: 1920px;
+	height: 1080px;
+}
+
+
+#top 
+{
+	width: 1920px;
+	height: 40px;
+	background-color: red;
+}
+
+
+#top h1 dd
+{
+	margin-left: 800px;
+}
+#top h1 dd a
+{
+	text-decoration: none;
+	float: left;
+	margin-left: 50px;
+	font-family: 楷体;
+}
