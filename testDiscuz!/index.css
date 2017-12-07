@@ -1,0 +1,106 @@
+body{
+	width: 1899px;
+	height: 1086px;
+}
+
+
+#BigBody{
+	width: 160px;
+	height: 1086px;
+	background-color:#dedede;
+	margin-left: 600px;
+}
+
+.top h2{
+	width: 160px;
+	height: 20px;
+	border-bottom: 1px dotted #cdcdcd;
+	font-size: 12px;
+}
+
+.top h2 a {
+	text-decoration: none;
+	margin-left: 30px;
+}
+
+.BigBody1{
+	width: 160px;
+	height: 383px;
+	border-bottom: 1px dotted #cdcdcd;
+}
+
+.BigBody1 img{
+	margin-left: 20px;
+}
+
+.BigBody1 h2{
+	font-size: 12px;
+}
+.BigBody1 a {
+	text-decoration:  none;
+	margin-left: 30px;
+}
+.sun1{
+	width: 120px;
+	height: 16px;
+	margin-left: 20px;
+}
+
+.sun1 img{
+	margin-left: 5px;
+	float: left;
+}
+
+.neirong1{
+	height: 144px;
+	line-height: 18px;
+}
+
+.neirong1 li{
+	list-style: none;
+}
+
+
+.neirong1  h4{
+		float: left;
+		width: 60px;
+		font-size: 8px;
+		height: 0px;
+		margin: 10px;
+		font-weight: normal;
+}
+.neirong1 p{
+	float: left;
+	width: 60px;
+	height: 0px;
+	margin: 10px;
+	font-size: 8px;
+}
+
+.BigBody2{
+	width: 160px;
+	height: 300px;
+}
+.BigBody2 img{
+	margin-left: 20px;
+}
+
+.BigBody2 h2{
+	font-size: 12px;
+}
+.BigBody2 a {
+	text-decoration:  none;
+	margin-left: 30px;
+}
+.sun1{
+	width: 120px;
+	height: 16px;
+	margin-left: 20px;
+}
+
+.sun1 img{
+	margin-left: 5px;
+	float: left;
+}
+
+#message .user_info { width: 450px; padding-bottom: 10px; position: absolute; top: -11px; left: -1px; border: 1px solid #cdcdcd; background: #fff; display: none; }
