@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learning2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<ul>
+		<li id="java">疯狂java讲义</li>
+		<li id="javaee" class="test">轻量级java ee企业级应用实战</li>
+		<li id="ajax">疯狂前开发讲义</li>
+		<li id="xml">疯狂xml讲义</li>
+		<li id="ejb">经典java ee 企业实战应用</li>
+		<li><span id="android">疯狂android讲义</span></li>
+	</ul>
+	<span>疯狂JAVA联盟</span>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		//访问父元素索引为第1、4、7等li的元素
+		$("li:nth-child(3n+1)").css("border","1px dashed black");
+		//访问父元素索引倒数第1、4、7等的li元素
+		$("li:nth-last-child(3n+1)").css("background-color","grey").css("padding","10px");
+		//访问页面中span元素且该span元素的父元素下仅包含该span元素
+		$("span:only-child()").append("<b>作为父元素的唯一子元素span元素</b>");
+	</script>
+</body>
+</html>
