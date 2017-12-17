@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form表单</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<input id="user" type="text"></br>
+	<input id="pass"  type="password"></br>
+	<textarea id="intro"></textarea></br>
+	<select id="gender" size="3" style="width: 80px">
+		<option value="male" selected="">男</option>
+		<option value="female">女</option>
+	</select><p>
+		<input id="pass" type="checkbox" checked="" value="xx"></br>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(":input:not('select')").val("dengfeng");//val 修改显示内容
+		$(":selected").css("border","2px dashed black");
+		$(":checked").prop("checked",false);
+	</script>
+	
+</body>
+</html>
