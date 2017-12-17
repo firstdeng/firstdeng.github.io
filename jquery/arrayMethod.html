@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>类数组</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<div>
+		<div id="java">疯狂fengkuang</div>
+		<div id="javaee">疯狂javaee</div>
+		<div id="ajax">疯狂ajax</div>
+		<div id="xml">疯狂xml</div>
+		<div id="ejb">企业实战应用</div>
+		<div id="android">android</div>
+	</div>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$("div>div").each(function(i)
+		{
+			this.innerHTML += "添加的内容" + i;
+		});
+		console.log($("div>div").length);
+		console.log($("div>div").get(1).innerHTML);
+		console.log($("#java").get()[0].innerHTML);
+		console.log($("div>div").index($("#ejb")));
+	</script>
+</body>
+</html>
