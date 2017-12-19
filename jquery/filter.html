@@ -17,6 +17,13 @@
 	<script type="text/javascript">
 		$("div>div").eq(3).css("font-size","24pt");
 		$("div>div").filter("#ajax").css("background-color","#aaa");
+		$("div>div").filter(function () {
+			return this.innerHTML.length > 8;
+		}).css("border","1px solid black");
+		$("div>div").not("#ajax").css("font-weight","bold");	
+		$("div>div").slice(3,5).height(60);
+		var result = $("div>div").map(i => i);
+		console.log(result);
 	</script>
 </body>
 </html>
