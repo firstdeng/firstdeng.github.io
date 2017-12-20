@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM导航</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>
+		<div id="java">疯狂java讲义</div>
+		<div id="javaee">轻量级java ee企业应用实战</div>
+		<div id="ajax"> 疯狂前端讲义</div>
+		<div id="xml">疯狂xml讲义</div>
+		<div id="ejb">经典java ee企业应用实战</div>
+		<div id="android">疯狂android讲义</div>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$("body>div").contents().css("background-color","#ddd");
+			$("#ajax").next().css("border","2px dotted black");
+			$("#ajax").nextUntil("#android").css("font-size","20pt");
+			$("#ajax").prev().css("border", "2px solid black");
+			$("#ajax").prevUntil("#java").height(50);
+			//向前面id为java的添加内容。。。。。。
+			$("#ajax").siblings("#java").append("<b>是ID为ajax的节点的兄弟节点(且其中的id为java)</b>");
+			$("#div").parent().each(function()
+			 {
+				alret($(this).html());
+			})
+		</script>
+	</div>
+
+</body>
+</html>
