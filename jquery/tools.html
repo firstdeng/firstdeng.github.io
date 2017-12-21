@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tools</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		document.writeln("浏览器是否支持创建XMLHttpRequest:" + $.support.ajax + "<br/>" );
+		document.writeln("XMLHttpRequest是否有withCredentials:" + $.support.cors + "<br/>");
+		document.writeln("$.trim('   ddd'));的结果是" + $.trim("   ddd") + "<br/>");
+		$.each(["java","ajax","java ee"],function(index,val)
+		{
+			document.writeln("['java','ajax','java ee']的第" + index + "个元素为:" + val + "<br/>");
+		});
+		var grepResult = $.grep(["java","ajax","java ee"],function(val,index)
+		{
+			return val.length > 5;
+		});
+		document.writeln("['java','ajax','java ee']中数组元素的"+ "字符个数大于5的还有:" + grepResult + "<br/>");
+		var mapResult = $.map(["java","ajax","java ee"],function(val , index)
+		{
+			return val + index
+		});
+		document.writeln("以['java','ajax',java ee]创建的新数组为:" + mapResult);
+		var div = $("<div>aa<div>");
+		var divArr = [div,div];
+		document.writeln("divArr.length的值为:" + divArr.length + "<br/>");
+		document.writeln("$.uniqueSort(divArr).length的结果为:" + $.uniqueSort(divArr).length + "<br/>" );
+		var str ="aa";
+		var strArr = [str , str];
+		document.writeln("strArr.length的值为:" + strArr.length + "<br/>");
+		document.writeln("$.uniqueSort(strArr).length的结果为:" + $.uniqueSort(strArr).length+"<br/>");
+		var result = $.parseJSON('[{"name":"孙悟空","age":500},' + '{"name" : "白骨精","age":21}]' );
+		for (var i = 0 , len = result.length; i < len; i++)
+		{
+			document.writeln("第" + i +"个角色的年龄是:" + result[i].name + ",年龄是:" + result[i].age + "<br/>");		
+		}
+	</script>
+</body>
+</html>
