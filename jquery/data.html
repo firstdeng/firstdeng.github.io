@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数据存储</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>
+		最有趣的人物是:<span></span>
+		它的年龄是:<span></span>
+	</div>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		var target = $("<div>java</div>");
+		target.data("book","疯狂java讲义");
+		console.log(target.data("book"));
+		target.removeData("book");
+		console.log(target.data("book"));
+		var div = $("body>div")[0];
+		$.data(div,"test",{name:"孙悟空",age:"500"});
+		$("span:first").text(jQuery.data(div,"test").name);
+		$("span:last").text(jQuery.data(div)["test"].age);
+		$.removeData(div);
+		console.log($.hasData(div));
+	</script>
+</body>
+</html>
