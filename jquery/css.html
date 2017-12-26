@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery中添加css</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="test1">
+		整体添加css样式元素
+	</div><br>
+	<div id="test2">
+		采用css(properties)方法添加css样式的元素
+	</div><br>
+	<div id="test3" style="position: absolute;">
+		可以自由移动的元素
+	</div>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$("test1").addClass("test");
+		$("test2").css({border:"1px solid black" , color:"#888"});
+		var target = $("#test3")
+		.css("background-color" , "#cccccc")
+		.css("padding", 10)
+
+		
+		.width(200)
+		.height(80)
+		.css("left", 40)
+		.css("top", 64);
+		var posi = target.position();
+		console.log("target的x坐标为:" + posi.left + "\n" + "target的Y坐标为:" + posi.top);
+	</script>
+</body>
+</html>
