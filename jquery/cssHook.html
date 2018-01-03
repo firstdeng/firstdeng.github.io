@@ -5,15 +5,15 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<div>疯狂讲义</div>
-	<div>轻量级javaee企业级应用实战</div>
+	<div>讲你个头啊</div>
+	<div>菜鸽子</div>
 	<script type="text/javascript" src="jquery-3.2.1.js"></script>
 	<script type="text/javascript">
 		(function($)
 		{
 			var _patterns = 
 			{
-				"mine":"progid:DXImageTransform.Microsoft.Gradient("+"StartColorStr='{0}',EndColorStr='{1}',GradientType=0)",
+				"msie":"progid:DXImageTransform.Microsoft.Gradient("+"StartColorStr='{0}',EndColorStr='{1}',GradientType=0)",
 				"mozilla":"-moz-linear-gradient(top,{0} 0%, {1} 100%)",
 				// "opera":"-o-linear-gradient(top,{0}, 0%. {1} 100%)",
 				"webkit":"-webkit-linear-gradient(top,{0} 0%,{1} 100%)",
@@ -26,7 +26,7 @@
 				else if(/msie/.test(navigator.userAgent.toLowerCase()))return "msie";
 				else  return "unknown";
 							}
-			var genCssString = function(ColorStr,browser)
+			var genCssString = function(colorStr,browser)
 			{
 				var reStr = _patterns[browser];
 				if (!reStr) return null;
@@ -34,7 +34,7 @@
 				if(colors.length != 2) return;
 				return reStr.replace (/\{0\}/,colors[0]).replace(/\{1\}/, colors[1]);
 			};
-			$.cssHopks["lineGradBackground"] = 
+			$.cssHooks["lineGradBackground"] = 
 			{
 				get: function (elem, computed,extra )
 				{
@@ -43,13 +43,13 @@
 				set: function(elem , value )
 				{
 					var b = browserName();
-					elem.style[b == "msie"? "filter" : "background" ] = genCssString(value, b );
+					elem.style[b == "msie"? "filter" : "background" ] = genCssString(value, b);
 				}
-			}
-		})(jQurey);
+			};
+		})(jQuery);
 		$("body>div").width(300)
 		.height(40)
-		.css("padding",30);
+		.css("padding" , 30);
 		$("body>div:first").css("lineGradBackground","#e2f,#efe");
 		$("body>div:last").css("lineGradBackground","#fff, #111");
 	</script>
