@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>打开新链接</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function popUp(winURL) {
+            window.open(winURL, "popup", "width=320,height=480");
+        }
+    </script>
+</head>
+
+<body>
+    <a href="http://www.example.com/" onclick="popUp(this.getAttribute('herf')); return false;">Example</a>
+</body>
+
+</html>
