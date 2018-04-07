@@ -16,10 +16,15 @@
     margin-left: 450px;
 }
 
+.all .Top h1 {
+    float: left;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
 .all .bodyMain .one {
     width: 200px;
     height: 500px;
-    background-image: url(pic/chun.jpg);
     margin-left: 250px;
     float: left;
 }
@@ -27,7 +32,6 @@
 .all .bodyMain .two {
     width: 200px;
     height: 500px;
-    background-image: url(pic/xia.jpg);
     margin-left: 100px;
     float: left;
 }
@@ -35,7 +39,6 @@
 .all .bodyMain .three {
     width: 200px;
     height: 500px;
-    background-image: url(pic/qiu.jpg);
     margin-left: 100px;
     float: left;
 }
@@ -43,7 +46,6 @@
 .all .bodyMain .four {
     width: 200px;
     height: 500px;
-    background-image: url(pic/dong.jpg);
     margin-left: 100px;
     float: left;
 }
