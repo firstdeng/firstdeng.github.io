@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.just {
+    width: 1510px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.just a {
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 150px;
+}
+
+.body {
+    width: 1310px;
+    height: 700px;
+    background-color: blue;
+    float: left;
+}
+
+.top {
+    width: 200px;
+    height: 750px;
+    background-color: brown;
+    float: left;
+}
+
+.body .one {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: crimson;
+    float: left;
+}
+
+.body .two {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: crimson;
+    float: left;
+}
+
+.body .three {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: crimson;
+    float: left;
+}
+
+.body .four {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: crimson;
+    float: left;
+    margin-top: 20px;
+}
+
+.body .five {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: crimson;
+    float: left;
+    margin-top: 20px;
+}
+
+.body .six {
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: crimson;
+    float: left;
+    margin-top: 20px;
+}

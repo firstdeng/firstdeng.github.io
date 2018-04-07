@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+
+#body {
+    width: 1920px;
+    height: 1080px;
+}
+
+.all .Top {
+    width: 700px;
+    height: 100px;
+    background-color: aqua;
+    margin-left: 450px;
+}
+
+.all .bodyMain .one {
+    width: 200px;
+    height: 500px;
+    background-image: url(pic/chun.jpg);
+    margin-left: 250px;
+    float: left;
+}
+
+.all .bodyMain .two {
+    width: 200px;
+    height: 500px;
+    background-image: url(pic/xia.jpg);
+    margin-left: 100px;
+    float: left;
+}
+
+.all .bodyMain .three {
+    width: 200px;
+    height: 500px;
+    background-image: url(pic/qiu.jpg);
+    margin-left: 100px;
+    float: left;
+}
+
+.all .bodyMain .four {
+    width: 200px;
+    height: 500px;
+    background-image: url(pic/dong.jpg);
+    margin-left: 100px;
+    float: left;
+}
+
+.all .under .underOne {
+    width: 1000px;
+    height: 150px;
+    margin-left: 300px;
+    background-color: blue;
+    float: left;
+}
+
+.underlast {
+    float: left;
+    margin-left: 300px;
+}
