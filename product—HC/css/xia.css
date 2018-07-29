@@ -12,7 +12,7 @@
 .just a {
     font-size: 50px;
     text-decoration: none;
-    margin-left: 150px;
+    margin-left: 220px;
 }
 
 .top {
@@ -43,6 +43,12 @@
     margin-left: 50px;
     font-size: 50px;
     margin-top: 90px;
+}
+
+#qwe {
+    margin-left: 180px;
+    width: 1600px;
+    height: 750px;
 }
 
 .top .pin {
@@ -109,4 +115,9 @@
     float: left;
     margin-left: 20px;
     margin-top: 50px;
+}
+
+.footer h1 {
+    float: left;
+    margin-left: 800px;
 }
