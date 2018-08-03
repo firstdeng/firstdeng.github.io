@@ -7,6 +7,7 @@
     width: 1510px;
     height: 100px;
     background-color: aqua;
+    margin-left: 250px;
 }
 
 .just a {
@@ -20,13 +21,14 @@
     height: 700px;
     background-color: blue;
     float: left;
+    margin-left: 250px;
 }
 
 .top {
     width: 200px;
-    height: 750px;
+    height: 700px;
     background-color: brown;
-    float: left;
+    margin-left: 1560px;
 }
 
 .body .one {
@@ -78,4 +80,16 @@
     background-color: crimson;
     float: left;
     margin-top: 20px;
+}
+
+.footer {
+    width: 1000px;
+    height: 50px;
+    float: left;
+    margin-left: 1000px;
+}
+
+.footer h1 {
+    float: left;
+    margin-left: 7000px;
 }
