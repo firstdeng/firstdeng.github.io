@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="动态.js" language="javascript" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var mes = document.getElementById('mes');
+            var top = document.getElementById("topt");
+            top.onmouseover = function() {
+                mes.style.display = "block";
+                mes.style.left = "150px";
+                mes.style.top = "55px";
+            }
+            top.onmouseout = function() {
+                mes.style.display = "none";
+            }
+            choosePic();
+        }
+    </script>
+</head>
+</head>
+
+<body>
+    <div id="top">
+        <div id="topo">
+            <img src="image/2.jpg">
+        </div>
+        <div id="topt">
+            <img src="image/9.jpg">
+        </div>
+    </div>
+    <header>
+        <div align="center" id="lianjie">
+            <a href="index.html">我的主页</a>
+            <a href="我的日志.html">我的日志</a>
+            <a href="我的留言板.html">我的留言板</a>
+            <a href="照片.html">照片</a>
+    </header>
+    </div>
+    <div id="body20">
+        <div id="box9">
+            <img src="image/32.jpg">
+        </div>
+        <div id="box10">
+            <img src="image/15.jpg" width="1200" height="600" id="adBanner" alt="Ad Banner" />
+        </div>
+        <div id="box14">
+            <h1 align="center">welcome to myblog！</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为网络日记是带有很明显的私人性质的，而Blog则是私人性和公共性的有效结合，它绝不仅仅是纯粹个人思想的表达和日常琐事的记录，它所提供的内容可以用来进行交流和为他人提供帮助，是可以包容整个互联网的，具有极高的共享精神和价值。一个Blog就是一个网页，它通常是由简短且经常更新的Post所构成；这些张贴的文章都按照年份和日期排列。Blog的内容和目的有很大的不同，从对其他网站的超级链接和评论，有关公司、个人、构想的新闻到日记、照片、诗歌、散文，甚至科幻小说的发表或张贴都有。许多Blogs是个人心中所想之事情的发表，其他Blogs则是一群人基于某个特定主题或共同利益领域的集体创作。Blog好像是对网络传达的实时讯息。撰写这些Weblog或Blog的人就叫做Blogger或Blog
+                writer。
+            </p>
+        </div>
+    </div>
+    <div id="box13">
+        <h1 align="center">博主</h1>
+        <p align="center">夜在渲染你的美</p>
+        <div id="box11">
+            <p>今日访问量</p>
+            199
+        </div>
+
+        <div id="box12">
+            <p>总访问量</p>
+            8888
+        </div>
+    </div>
+    <div id="footer">
+        <hr>
+        <h1 align="center"> 版权所有@四川邮电职业技术学院16级软件技术邓枫</h1>
+    </div>
+    <div id="mes" style="width: 100px;height: 100px;background-color: #fff;position: absolute;display: none;" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别让璀灿的梦想落满灰尘！</div>
+</body>
+
+</html>
